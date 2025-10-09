@@ -11,7 +11,7 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- ===== HEADER ===== -->
+
   <header>
     <nav class="navbar navbar-expand-lg" style="background-color: #ff2626;">
       <div class="container">
@@ -135,18 +135,18 @@
 
 
   <script>
-    // 1. Fade in animasi header
+
     $(document).ready(function () {
       $("header").hide().fadeIn(800);
     });
 
-    // 2. Hover efek card
+ 
     $(".card").hover(
       function () { $(this).addClass("shadow-lg border-danger"); },
       function () { $(this).removeClass("shadow-lg border-danger"); }
     );
 
-    // 3. Validasi form
+   
     $("#formPendaftaran").on("submit", function (e) {
       e.preventDefault();
       let nama = $("#nama").val().trim();
@@ -161,7 +161,7 @@
       }
     });
 
-    // 4. Tombol scroll ke atas
+   
     $("body").append('<button id="btnTop" class="btn btn-danger position-fixed bottom-0 end-0 m-4">↑</button>');
     $("#btnTop").hide();
     $(window).scroll(function () {
@@ -172,7 +172,7 @@
       $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
-    // 5. Efek klik navbar aktif
+    
     $(".nav-link").click(function () {
       $(".nav-link").removeClass("fw-bold");
       $(this).addClass("fw-bold");
